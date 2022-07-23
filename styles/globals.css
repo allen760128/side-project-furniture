@@ -20,11 +20,28 @@ body {
 html h1 {
   font-size: 64px;
   line-height: 76px;
+  color: #151411;
+}
+
+html h2 {
+  font-size: 44px;
+  color: #151411;
+}
+
+html h3 {
+  font-size: 24px;
+  color: #151411;
+}
+
+html h5 {
+  font-size: 18px;
 }
 
 html p {
   font-size: 18px;
+  font-weight: 500;
   line-height: 26px;
+  color: #AFADB5;
 }
 
 a {

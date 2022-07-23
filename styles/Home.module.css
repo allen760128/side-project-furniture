@@ -1,10 +1,11 @@
-.container {
-  width: 100%;
-}
-
-.container .banner {
+.wrap {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container {
+  width: 100%;
 }
 
 .container .banner .title {
@@ -13,26 +14,22 @@
 }
 
 
-.container .banner .title>p {
+.container .banner .title .divp {
   padding-top: 30px;
-  color: #AFADB5;
   margin: 0 auto;
   position: relative;
   width: 750px;
 }
 
-.container .banner .pic {
-  padding: 0 2rem;
-}
 
-.container .banner .title>p>span {
+.container .banner .title .divp>span {
   position: absolute;
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container .banner .title>p>span:nth-child(3) {
+.container .banner .title .divp>span:nth-child(2) {
   width: 250px;
   height: 250px;
   top: 0;
@@ -40,7 +37,7 @@
   z-index: 50;
 }
 
-.container .banner .title>p>span:nth-child(4) {
+.container .banner .title .divp>span:nth-child(3) {
   width: 50px;
   height: 50px;
   top: -70px;
@@ -53,7 +50,7 @@
   margin: 0 auto;
 }
 
-.container .banner .title>p .search {
+.container .banner .title .divp .search {
   position: absolute;
   width: 810px;
   height: 84px;
@@ -70,7 +67,7 @@
   justify-content: center;
 }
 
-.container .banner .title>p .search>span {
+.container .banner .title .divp .search>span {
   display: block;
   width: 40px;
   height: 40px;
@@ -78,14 +75,14 @@
   background-size: cover;
 }
 
-.container .banner .title>p .search>form {
+.container .banner .title .divp .search>form {
   height: 50px;
   width: 700px;
   background-color: #fda;
   display: flex;
 }
 
-.container .banner .title>p .search>form>input {
+.container .banner .title .divp .search>form>input {
   width: 530px;
   height: 50px;
   border: unset;
@@ -97,7 +94,7 @@
   font-size: 18px;
 }
 
-.container .banner .title>p .search>form>button {
+.container .banner .title .divp .search>form>button {
   background-color: #518581;
   width: 170px;
   height: 50px;
@@ -110,6 +107,99 @@
   transition: 0.3s all ease-in-out;
 }
 
-.container .banner .title>p .search>form>button:hover {
+.container .banner .title .divp .search>form>button:hover {
   background-color: #3c6966;
+}
+
+.container .benefits {
+  padding-top: 12rem;
+}
+
+.container .benefits .btop {
+  width: 100%;
+  color: #FFB23F;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.container .benefits .bmiddle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.container .benefits .bbottom .bbottomUl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .benefits .bbottom .bbottomUl>li {
+  width: 32%;
+  height: 285px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+  padding: 2rem 1.5rem 1rem 1.5rem;
+}
+
+.container .benefits .bbottom .bbottomUl>li>span {
+  display: block;
+  background: #F9F9F9;
+  background-size: 38px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.container .benefits .bbottom .bbottomUl>li>h3 {
+  padding-bottom: 20px;
+}
+
+.container .benefits .bbottom .bbottomUl>li>p {
+  padding-bottom: 20px;
+}
+
+.container .product {
+  padding-top: 12rem;
+}
+
+.container .product .title {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.container .product .title>h5 {
+  width: 100%;
+  color: #FFB23F;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.container .product .title>h2 {
+  padding-bottom: 20px;
+}
+
+.container .mySwiper {
+  width: 100%;
+  height: 550px;
+}
+
+.container .mySwiper .inner {
+  width: 100%;
+  height: auto;
+}
+
+.container .mySwiper .inner>img {
+  width: 100%;
+}
+
+.container .mySwiper .inner>h5 {
+  padding: 26px 0 14px 0;
+  color: #AFADB5;
+}
+
+.container .mySwiper .inner>p {
+  padding: 10px 0 18px 0;
 }
