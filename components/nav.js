@@ -34,6 +34,7 @@ const nav = () => {
                             </li>
                         </ul>
                     </div>
+
                     <div className={style.user}>
                         <Link href="">
                             <a>
