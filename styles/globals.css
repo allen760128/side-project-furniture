@@ -17,6 +17,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html h1 {
+  font-size: 64px;
+  line-height: 76px;
+}
+
+html p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
 a {
   color: inherit;
   text-decoration: none;

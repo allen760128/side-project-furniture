@@ -1,3 +1,115 @@
 .container {
   width: 100%;
 }
+
+.container .banner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container .banner .title {
+  text-align: center;
+  padding: 100px 0 90px 0;
+}
+
+
+.container .banner .title>p {
+  padding-top: 30px;
+  color: #AFADB5;
+  margin: 0 auto;
+  position: relative;
+  width: 750px;
+}
+
+.container .banner .pic {
+  padding: 0 2rem;
+}
+
+.container .banner .title>p>span {
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .banner .title>p>span:nth-child(3) {
+  width: 250px;
+  height: 250px;
+  top: 0;
+  left: -170px;
+  z-index: 50;
+}
+
+.container .banner .title>p>span:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  top: -70px;
+  right: 20px;
+  z-index: 60;
+}
+
+.container .banner .title>h1 {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.container .banner .title>p .search {
+  position: absolute;
+  width: 810px;
+  height: 84px;
+  background-color: #fff;
+  box-shadow: 0px 4px 80px rgba(175, 173, 181, 0.2);
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .banner .title>p .search>span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .banner .title>p .search>form {
+  height: 50px;
+  width: 700px;
+  background-color: #fda;
+  display: flex;
+}
+
+.container .banner .title>p .search>form>input {
+  width: 530px;
+  height: 50px;
+  border: unset;
+  appearance: none;
+  padding: 0 0.8rem;
+  color: #5a5a5a;
+  outline: none;
+  transition: 0.3s all ease-in-out;
+  font-size: 18px;
+}
+
+.container .banner .title>p .search>form>button {
+  background-color: #518581;
+  width: 170px;
+  height: 50px;
+  display: block;
+  border: unset;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.container .banner .title>p .search>form>button:hover {
+  background-color: #3c6966;
+}
