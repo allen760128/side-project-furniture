@@ -33,8 +33,19 @@ html h3 {
   color: #151411;
 }
 
+html h4 {
+  font-size: 20px;
+  color: #151411;
+}
+
+
 html h5 {
   font-size: 18px;
+}
+
+html h6 {
+  font-size: 14px;
+  color: #151411;
 }
 
 html p {

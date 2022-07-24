@@ -1,5 +1,7 @@
 import Head from '../components/head';
 import Nav from '../components/nav';
+import Footer from '../components/footer';
+import Link from 'next/link';
 import style from '../styles/Home.module.css';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,80 +9,10 @@ import { FreeMode, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import IndexData from './data/indexData';
 
 export default function Home() {
 
-  const benefitsData = [{
-    pic: '/assets/index_benefits_icon1.svg',
-    title: 'Many Choices',
-    content: 'Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non.'
-  }, {
-    pic: '/assets/index_benefits_icon2.svg',
-    title: 'Fast and On Time',
-    content: 'Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non.'
-  }, {
-    pic: '/assets/index_benefits_icon3.svg',
-    title: 'Affordable Price',
-    content: 'Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non.'
-  },
-  ];
-
-  const preductData = [{
-    pic: '/assets/index_product_pic1.jpg',
-    title: 'White Aesthetic Chair',
-    sub1: 'Chair',
-    sub2: 'Combination of wood and wool',
-    price: '$63.47'
-  }, {
-    pic: '/assets/index_product_pic2.jpg',
-    title: 'Bardono Smart Lamp',
-    sub1: 'Lamp',
-    sub2: 'Easy to use with bluetooth connection',
-    price: '$62.23'
-  }, {
-    pic: '/assets/index_product_pic3.jpg',
-    title: 'Sofa Empuk Banget',
-    sub1: 'Sofa',
-    sub2: 'Using kapuk randu material',
-    price: '$58.39'
-  }, {
-    pic: '/assets/index_product_pic4.jpg',
-    title: 'White Aesthetic Chair',
-    sub1: 'Chair',
-    sub2: 'Combination of wood and wool',
-    price: '$63.47'
-  }, {
-    pic: '/assets/index_product_pic5.jpg',
-    title: 'Bardono Smart Lamp',
-    sub1: 'Lamp',
-    sub2: 'Easy to use with bluetooth connection',
-    price: '$62.23'
-  }, {
-    pic: '/assets/index_product_pic6.jpg',
-    title: 'Sofa Empuk Banget',
-    sub1: 'Sofa',
-    sub2: 'Using kapuk randu material',
-    price: '$58.39'
-  }, {
-    pic: '/assets/index_product_pic7.jpg',
-    title: 'White Aesthetic Chair',
-    sub1: 'Chair',
-    sub2: 'Combination of wood and wool',
-    price: '$63.47'
-  }, {
-    pic: '/assets/index_product_pic8.jpg',
-    title: 'Bardono Smart Lamp',
-    sub1: 'Lamp',
-    sub2: 'Easy to use with bluetooth connection',
-    price: '$62.23'
-  }, {
-    pic: '/assets/index_product_pic9.jpg',
-    title: 'Sofa Empuk Banget',
-    sub1: 'Sofa',
-    sub2: 'Using kapuk randu material',
-    price: '$58.39'
-  },
-  ]
 
   return (
     <div className={style.container}>
@@ -126,7 +58,7 @@ export default function Home() {
         <div className={style.bbottom}>
           <ul className={style.bbottomUl}>
             {
-              benefitsData.map((data, inx) => (
+              IndexData.benefitsData.map((data, inx) => (
                 <li key={inx}>
                   <span style={{ backgroundImage: `url(${data.pic})` }}></span>
                   <h3>{data.title}</h3>
@@ -146,20 +78,17 @@ export default function Home() {
           <p>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim<br />
             placerat nisi, adipiscing mauris non purus parturient.</p>
         </div>
-
       </div>
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
         freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={{ clickable: true, }}
         modules={[FreeMode, Pagination]}
         className={style.mySwiper}
       >
         {
-          preductData.map((data, inx) => (
+          IndexData.productData.map((data, inx) => (
             <SwiperSlide className={style.inner} key={inx}>
               <img src={data.pic} alt='pic1' ></img>
               <h5>{data.sub1}</h5>
@@ -170,6 +99,126 @@ export default function Home() {
           ))
         }
       </Swiper>
+      <div className={`${style.quality} ${style.wrap}`}>
+        <h5>Our Product</h5>
+        <div className={style.left}>
+          <div className={style.title}>
+
+            <h2>Crafted by talented and<br />high quality material</h2>
+            <p>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim<br />
+              placerat nisi, adipiscing mauris non purus parturient.</p>
+            <Link href='/#'>
+              <a>Learn More</a>
+            </Link>
+            <img src="/assets/index_quality_pic1.jpg" alt="pic1" />
+          </div>
+        </div>
+        <div className={style.right}>
+          <ul className={style.rightUl}>
+            <li>
+              <h2>20+</h2>
+              <p>Years Experience</p>
+            </li>
+            <li>
+              <h2>483</h2>
+              <p>Happy Client</p>
+            </li>
+            <li>
+              <h2>150+</h2>
+              <p>Project Finished</p>
+            </li>
+          </ul>
+          <img src="/assets/index_quality_pic2.jpg" alt="pic2" />
+        </div>
+      </div>
+      <div className={`${style.created} ${style.wrap}`}>
+        <div className={style.title}>
+          <h5>Testimonials</h5>
+          <h2>What our customer say</h2>
+          <p>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim<br />
+            placerat nisi, adipiscing mauris non purus parturient.</p>
+        </div>
+      </div>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        freeMode={true}
+        pagination={{ clickable: true, }}
+        modules={[FreeMode, Pagination]}
+        className={style.mySwiper2}
+      >
+        {
+          IndexData.createdData.map((data, inx) => (
+            <SwiperSlide className={style.inner} key={inx}>
+              <span style={{ backgroundImage: 'url(/assets/index_custom_icon1.svg)' }}></span>
+              <p>{data.content}</p>
+              <div className={style.cbottom}>
+                <div className={style.left}>
+                  <img src={data.pic} alt="pic1" />
+                  <h4>{data.name}</h4>
+                </div>
+                <div className={style.right}>
+                  <span style={{ backgroundImage: 'url(/assets/index_custom_icon2.svg)' }} ></span>
+                  <h5>{data.score}</h5>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))
+        }
+
+      </Swiper>
+      <div className={`${style.articles} ${style.wrap}`}>
+        <h5>Testimonials</h5>
+        <div className={style.left}>
+          <h2>The best furniture comes<br /> from Lalasia</h2>
+          <p>Pellentesque etiam blandit in tincidunt at donec. </p>
+          <div className={style.leftPic} style={{ backgroundImage: 'url(/assets/index_articles_pic1.jpg)' }}>
+            <p>Tips and Trick</p>
+            <h3>Create Cozy Dinning Room Vibes</h3>
+            <p>Decorating with neutrals brings balance...</p>
+            <Link href="/#">
+              <a >Read More</a>
+            </Link>
+            <div className={style.navi}>
+              <span style={{ backgroundImage: 'url(/assets/index_articles_icon1.svg)' }} ></span>
+              <span style={{ backgroundImage: 'url(/assets/index_articles_icon2.svg)' }}></span>
+            </div>
+          </div>
+        </div>
+        <div className={style.right}>
+          <ul className={style.rightUl}>
+            {
+              IndexData.articlesData.map((data, inx) => (
+                <li key={inx}>
+                  <img src={data.pic1} alt="pic1" />
+                  <div className={style.content}>
+                    <p>{data.sub1}</p>
+                    <h3>{data.title}</h3>
+                    <p>{data.sub2}</p>
+                    <div className={style.user}>
+                      <div className={style.userInner}>
+                        <span style={{ backgroundImage: `url(${data.pic2})` }}></span>
+                        <h6>By {data.user}</h6>
+                      </div>
+                      <p>{data.date}</p>
+                    </div>
+                  </div>
+                </li>
+              ))
+            }
+
+          </ul>
+        </div>
+      </div>
+      <div className={`${style.join} ${style.wrap}`}>
+        <h2>Join with me to get special discount</h2>
+        <Link href=''>
+          <a >
+            Learn More<span style={{ backgroundImage: 'url(/assets/index_join_icon1.svg)' }}></span>
+          </a>
+        </Link>
+      </div>
+      <Footer></Footer>
     </div>
   )
 }
