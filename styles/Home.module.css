@@ -650,6 +650,87 @@
   }
 
 
+
+
+
+  .container .mySwiper2 .inner {
+    height: 300px;
+  }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 1400px;
+    padding: 0 1.5rem;
+  }
+
+  .container .banner .title {
+    padding: 50px 0 70px 0;
+  }
+
+  .container .banner .title .divp {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .container .banner .title .divp>p>br {
+    display: none;
+  }
+
+  .container .banner .title .divp>span:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    top: 75px;
+    left: -35px;
+  }
+
+  .container .banner .title .divp>span:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    top: -30px;
+    right: 100px;
+    z-index: 60;
+  }
+
+  .container .banner .title>h1 {
+    width: 100%;
+  }
+
+  .container .banner .title .divp .search {
+    width: 85%;
+    height: 60px;
+    top: 130px;
+  }
+
+  .container .banner .title .divp .search>span {
+    width: 15%;
+    height: 30px;
+    background-size: 30px;
+    background-position: center;
+  }
+
+  .container .banner .title .divp .search>form {
+    height: 40px;
+    width: 100%;
+  }
+
+  .container .banner .title .divp .search>form>input {
+    width: 75%;
+    height: 40px;
+    padding: 0 0.8rem;
+    font-size: 14px;
+  }
+
+  .container .banner .title .divp .search>form>button {
+    width: 20%;
+    height: 40px;
+    font-size: 14px;
+  }
+
   /* ---------------------benefits------------------- */
 
   .container .benefits {
@@ -1082,8 +1163,5 @@
   .container .join>a:hover {
     background-color: #3c6966;
   }
+
 }
-
-
-
-@media (max-width: 768px) {}

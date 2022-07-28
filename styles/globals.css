@@ -80,6 +80,7 @@ a {
 @media (max-width: 768px) {
   html h1 {
     font-size: 26px;
+    line-height: 38px;
   }
 
   html h2 {
@@ -105,5 +106,6 @@ a {
 
   html p {
     font-size: 14px;
+    line-height: 22px;
   }
 }
