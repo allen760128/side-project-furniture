@@ -1,11 +1,12 @@
 .wrap {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 2rem;
+
 }
 
 .footer {
     width: 100%;
+    padding: 0 2rem;
 }
 
 .footer .footerWrap {
@@ -59,4 +60,72 @@
 
 .footer .footerWrap .right .rightUl>li>ul>li>a:hover {
     color: #6d6d6d;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .footer .footerWrap {
+        padding: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+
+    .footer .footerWrap .left {
+        display: flex;
+    }
+
+    .footer .footerWrap .left>a {
+        display: block;
+        width: 100px;
+        height: 40px;
+    }
+
+    .footer .footerWrap .left>a>span {
+        width: 100px;
+        height: 40px;
+        background-size: 100px;
+    }
+
+    .footer .footerWrap .left>p {
+        padding-top: 0rem;
+        padding-left: 1rem;
+    }
+
+    .footer .footerWrap .left>p>br {
+        display: none;
+    }
+
+    .footer .footerWrap .right .rightUl {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .footer .footerWrap .right .rightUl>li>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer .footerWrap .right .rightUl>li>ul>li {
+        font-size: 16px;
+    }
+
+    .footer .footerWrap .right .rightUl>li>ul>li>a {
+        font-size: 14px;
+    }
+
 }
