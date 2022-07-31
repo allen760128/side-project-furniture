@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './nav.module.css';
 import Link from 'next/link';
 
-const nav = () => {
+const nav = ({ product }) => {
     const [rwd, setRwd] = useState(false);
 
     const handleRwdMenu = () => {
@@ -24,13 +24,18 @@ const nav = () => {
             <div className={style.navWrap}>
                 <div className={style.inner}>
                     <div className={style.logo}>
-                        <span style={{ backgroundImage: 'url(/assets/nav_logo.svg)' }}></span>
+                        <Link href='/'>
+                            <a>
+                                <span style={{ backgroundImage: 'url(/assets/nav_logo.svg)' }}></span>
+
+                            </a>
+                        </Link>
                     </div>
                     <div className={style.list}>
                         <ul className={style.listUl}>
                             <li>
-                                <Link href="">
-                                    <a>Product</a>
+                                <Link href="/products">
+                                    <a style={{ borderBottom: `3px solid ${product}` }}>Product</a>
                                 </Link>
                             </li>
                             <li>
