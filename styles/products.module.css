@@ -4,6 +4,9 @@
     padding: 0 2rem;
 }
 
+
+/* ---------------------banner------------------- */
+
 .banner .title {
     width: 100%;
     text-align: center;
@@ -12,4 +15,100 @@
 
 .banner .title>h1 {
     padding-bottom: 2rem;
+}
+
+
+/* ---------------------search------------------- */
+
+.search {
+    padding: 5rem 0;
+}
+
+.search .searchWrap {
+    display: flex;
+    gap: 2%;
+}
+
+.search .searchWrap>form {
+    width: 80%;
+}
+
+.search .searchWrap>form .inner {
+    height: 84px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 4px 120px rgba(175, 173, 181, 0.15);
+    display: flex;
+    align-items: center;
+}
+
+.search .searchWrap>form .inner>span {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    width: 5%;
+    height: 25px;
+
+}
+
+.search .searchWrap>form .inner>input {
+    width: 75%;
+    height: 60px;
+    border: unset;
+    appearance: none;
+    padding: 0 0.8rem;
+    color: #5a5a5a;
+    outline: none;
+    transition: 0.3s all ease-in-out;
+    font-size: 18px;
+}
+
+.search .searchWrap>form .inner>input::placeholder {
+    color: #AFADB5;
+}
+
+.search .searchWrap>form .inner>button {
+    width: 19%;
+    height: 60px;
+    background-color: #518581;
+    border: unset;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    margin-left: 1%;
+}
+
+.search .searchWrap>form .inner>button:hover {
+    background-color: #3c6966;
+}
+
+.search .searchWrap>button {
+    width: 18%;
+    background-color: #ffffff;
+    border: unset;
+    color: #151411;
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0px 4px 120px rgba(175, 173, 181, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search .searchWrap>button:hover {
+    background-color: #f5f5f5;
+}
+
+.search .searchWrap>button>span {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: block;
 }

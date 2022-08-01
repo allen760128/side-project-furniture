@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className={style.container}>
-      <Head></Head>
+      <Head title={'Lalasia side project'}></Head>
       <Nav></Nav>
       <div className={`${style.banner} ${style.wrap}`}>
         <div className={style.title}>
