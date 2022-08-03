@@ -112,3 +112,91 @@
     height: 25px;
     display: block;
 }
+
+/* ---------------------products------------------- */
+
+.products {
+    padding-top: 5rem;
+}
+
+.products .title {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products .title .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.products .title .left>span {
+    display: block;
+    width: 60px;
+    height: 30px;
+    color: #518581;
+    background-color: #F9F9F9;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.products .title .right {
+    width: 140px;
+    height: 50px;
+    border: 2px solid #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.products .title .right>span {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.products .title .right>p {
+    color: #151411;
+}
+
+.products .list {
+    padding-top: 4rem;
+}
+
+.products .list .listUl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.products .list .listUl>li {
+    width: 32%;
+}
+
+.products .list .listUl>li>h5 {
+    padding-top: 26px;
+    font-size: 18px;
+    color: #AFADB5;
+}
+
+.products .list .listUl>li>h3:nth-child(3) {
+    padding-top: 14px;
+}
+
+.products .list .listUl>li>p {
+    padding-top: 10px;
+}
+
+.products .list .listUl>li>h3:last-child {
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
