@@ -16,7 +16,7 @@ const products = () => {
     return (
         <div>
             <Head title={'Lalasia products'}></Head>
-            <Nav product={'#518581'} />
+            {/* <Nav product={'#518581'} /> */}
             <div className={`${style.banner} `}>
                 <div className={style.title}>
                     <h1>Products</h1>
@@ -71,7 +71,7 @@ const products = () => {
                     </ul>
                 </div>
             </div>
-            <Page page={10} />
+            {/* <Page page={10} /> */}
             <Footer></Footer>
         </div>
     )
