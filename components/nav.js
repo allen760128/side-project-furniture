@@ -83,7 +83,7 @@ const Nav = ({ product }) => {
                     style={{ left: rwd ? '0' : '-100%' }}>
                     <ul className={style.rwdlistUl}>
                         <li>
-                            <Link href="">
+                            <Link href="/products">
                                 <a>Product</a>
                             </Link>
                         </li>

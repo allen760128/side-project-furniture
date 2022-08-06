@@ -17,6 +17,10 @@
     padding-bottom: 2rem;
 }
 
+.banner .title .rwBr {
+    display: none;
+}
+
 
 /* ---------------------search------------------- */
 
@@ -199,4 +203,146 @@
 .products .list .listUl>li>h3:last-child {
     padding-top: 18px;
     padding-bottom: 30px;
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+    /* ---------------------search------------------- */
+
+    .search {
+        padding: 5rem 2rem;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* ---------------------banner------------------- */
+
+    .banner .title {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .banner .title>h1 {
+        padding-bottom: 1rem;
+    }
+
+    .banner .title>p>br {
+        display: none;
+    }
+
+    .banner .title .rwBr {
+        display: block;
+    }
+
+    /* ---------------------search------------------- */
+
+    .search {
+        padding: 2rem 2rem;
+    }
+
+    .search .searchWrap {
+        display: flex;
+        gap: 0%;
+    }
+
+    .search .searchWrap>form {
+        width: 100%;
+    }
+
+    .search .searchWrap>form .inner {
+        height: 54px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+
+    .search .searchWrap>form .inner>span {
+        background-size: 20px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .search .searchWrap>form .inner>input {
+        width: 75%;
+        height: 38px;
+        padding: 0 0.8rem;
+        font-size: 14px;
+    }
+
+    .search .searchWrap>form .inner>button {
+        width: 100px;
+        height: 38px;
+        font-size: 14px;
+        letter-spacing: 0.1rem;
+        margin-left: 0%;
+    }
+
+    .search .searchWrap>button {
+        display: none;
+    }
+
+    /* ---------------------products------------------- */
+
+    .products {
+        padding-top: 2rem;
+    }
+
+    .products .title .left {
+        gap: 8px;
+    }
+
+    .products .title .left>span {
+        width: 40px;
+        height: 25px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .products .title .right {
+        display: none;
+    }
+
+    .products .list {
+        padding-top: 1.5rem;
+    }
+
+    .products .list .listUl {
+        justify-content: flex-start;
+        gap: 2%;
+    }
+
+    .products .list .listUl>li {
+        width: 49%;
+    }
+
+    .products .list .listUl>li>h5 {
+        padding-top: 14px;
+        font-size: 12px;
+    }
+
+    .products .list .listUl>li>h3:nth-child(3) {
+        padding-top: 14px;
+    }
+
+    .products .list .listUl>li>p {
+        padding-top: 10px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .products .list .listUl>li>h3:last-child {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
 }

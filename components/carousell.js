@@ -106,9 +106,8 @@ const Carousell = (props) => {
                     height: '30px',
                     left: '0',
                     right: '0',
-                    top: '90%',
-                    bottom: '0',
-                    margin: '0 auto',
+                    bottom: '0px',
+                    margin: 'auto',
                     display: dotdisplay,
                 }}>
                     <ul style={style.dotUl}>
@@ -186,7 +185,10 @@ const style = {
         height: '50px',
         backgroundColor: 'rgba(0,0,0,0.2)',
         borderRadius: '50px',
-        top: '48%',
+        // top: '48%',
+        top: 0,
+        bottom: 0,
+        margin: 'auto',
         right: '30px',
         display: 'flex',
         alignItems: 'center',

@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 60px;
+    gap: 8%;
     /* background-color: #fda; */
 }
 
@@ -124,6 +124,7 @@
     .nav .navWrap .inner .user>a>span {
         width: 30px;
         height: 40px;
+        background-size: 25px;
     }
 
     .nav .navWrap .inner .user>a:nth-child(3) {
