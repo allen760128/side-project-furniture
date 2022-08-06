@@ -81,7 +81,7 @@ const footer = () => {
                                 </li>
                                 <li>
                                     <Link href='/#'>
-                                        <a>Instagram</a>
+                                        <a>Twitter</a>
                                     </Link>
                                 </li>
                             </ul>
