@@ -20,7 +20,7 @@ const Products = () => {
             <div className={`${style.banner} `}>
                 <div className={style.title}>
                     <h1>Products</h1>
-                    <p>We display products based on the latest products we have, if you want<br />to see our old products please enter the name of the item</p>
+                    <p>We display products based on the latest <br className={style.rwBr} />products we have, if you want<br />to see our old <br className={style.rwBr} />products please enter the name of the item</p>
                 </div>
                 <Carousell />
             </div>
@@ -30,7 +30,7 @@ const Products = () => {
                         <div className={style.inner}>
                             <span style={{ backgroundImage: 'url(/assets/index_banner_icon3.svg)' }}></span>
                             <input type="text" placeholder='Search property' />
-                            <button> Find Now</button>
+                            <button> Search</button>
                         </div>
                     </form>
                     <button>
