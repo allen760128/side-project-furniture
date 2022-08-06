@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import style from './page.module.css';
 import { v4 as uuidv4 } from 'uuid';
 
-const page = ({ page }) => {
+const page = (page) => {
     const [paGe, setPage] = useState(1);
     const pAray = () => {
         let arr = [];
