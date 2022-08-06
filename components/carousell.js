@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 
 
 const Carousell = (props) => {
     // const pic = props.PICDATA;
     const pic =
-        [{ id: 1, title: 'pic1', link: 'assets/products_banner_pic1.jpg' },
-        { id: 2, title: 'pic2', link: 'assets/products_banner_pic1.jpg' },
-        { id: 3, title: 'pic3', link: 'assets/products_banner_pic1.jpg' },
-        { id: 4, title: 'pic4', link: 'assets/products_banner_pic1.jpg' },
-        { id: 5, title: 'pic5', link: 'assets/products_banner_pic1.jpg' },
+        [{ id: 1, title: 'pic1', link: '/assets/products_banner_pic1.jpg' },
+        { id: 2, title: 'pic2', link: '/assets/products_banner_pic1.jpg' },
+        { id: 3, title: 'pic3', link: '/assets/products_banner_pic1.jpg' },
+        { id: 4, title: 'pic4', link: '/assets/products_banner_pic1.jpg' },
+        { id: 5, title: 'pic5', link: '/assets/products_banner_pic1.jpg' },
         ];
 
     const [navLSwitch, setLNav] = useState(false);
@@ -86,7 +87,8 @@ const Carousell = (props) => {
                         {
                             pic.map(picData => (
                                 <li style={style.carousellLi} key={picData.id}>
-                                    <img style={style.pic} src={picData.link} alt={picData.title} />
+                                    {/* <img style={style.pic} src={picData.link} alt={picData.title} /> */}
+                                    <Image src={picData.link} alt='pic1' width={1440} height={500} layout='responsive'></Image>
                                 </li>
                             ))
                         }
@@ -225,10 +227,11 @@ const style = {
     // },
     carousellLi: {
         width: '100%',
+        display: 'block'
     },
-    pic: {
-        width: '100%'
-    },
+    // pic: {
+    //     width: '100%'
+    // },
     // dotNavWrap: {
     //     position: 'absolute',
     //     width: '200px',

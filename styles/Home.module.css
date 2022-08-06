@@ -252,16 +252,11 @@
   line-height: 54px;
   font-weight: 500;
   transition: 0.3s all ease-in-out;
+  margin-bottom: 50px;
 }
 
 .container .quality .left .title a:hover {
   background-color: #3c6966;
-}
-
-.container .quality .left .title>img {
-  padding-top: 50px;
-  width: 100%;
-  height: auto;
 }
 
 .container .quality .right {
@@ -324,10 +319,6 @@
   height: 50px;
   background-repeat: no-repeat;
   background-size: 50px;
-}
-
-.container .mySwiper2 .inner>img {
-  width: 100%;
 }
 
 .container .mySwiper2 .inner>h5 {
@@ -480,12 +471,9 @@
   padding: 21px 0 14px 0;
 }
 
-.container .articles .right .rightUl>li>img {
-  /* max-height: 260px;
-  max-width: 260px; */
-  /* width: 100%; */
+.container .articles .right .rightUl>li .picWrap {
+  display: block;
   width: 30%;
-  height: 100%;
 }
 
 .container .articles .right .rightUl>li .content .user {
@@ -815,10 +803,6 @@
     height: auto;
   }
 
-  .container .mySwiper .inner>img {
-    width: 100%;
-  }
-
   .container .mySwiper .inner>h5 {
     padding: 26px 0 14px 0;
   }
@@ -865,14 +849,10 @@
     font-size: 16px;
     line-height: 40px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
 
-  .container .quality .left .title>img {
-    padding-top: 30px;
-    width: 100%;
-    height: auto;
-  }
 
   .container .quality .right {
     width: 100%;
@@ -928,10 +908,6 @@
     width: 100%;
     height: 30px;
     background-size: 30px;
-  }
-
-  .container .mySwiper2 .inner>img {
-    width: 100%;
   }
 
   .container .mySwiper2 .inner>h5 {
@@ -1064,9 +1040,8 @@
     padding: 0.3rem 0 0.3rem 0;
   }
 
-  .container .articles .right .rightUl>li>img {
+  .container .articles .right .rightUl>li .picWrap {
     width: 25%;
-    height: 100%;
   }
 
   .container .articles .right .rightUl>li .content .user {

@@ -5,8 +5,9 @@ import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
-import Carousell from '../components/carousell'
-import { item } from './data/productsData'
+import Carousell from '../components/carousell';
+import Page from '../components/page';
+import { item } from './data/productsData';
 // import { Aa } from '../styles/aa.js';
 
 const products = () => {
@@ -70,6 +71,7 @@ const products = () => {
                     </ul>
                 </div>
             </div>
+            <Page page={10}></Page>
             <Footer></Footer>
         </div>
     )

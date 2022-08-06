@@ -90,7 +90,7 @@ export default function Home() {
         {
           IndexData.productData.map((data, inx) => (
             <SwiperSlide className={style.inner} key={inx}>
-              <img src={data.pic} alt='pic1' ></img>
+              <Image src={data.pic} alt='pic1' width={394} height={360} layout='responsive'></Image>
               <h5>{data.sub1}</h5>
               <h3>{data.title}</h3>
               <p>{data.sub2}</p>
@@ -110,7 +110,7 @@ export default function Home() {
             <Link href='/#'>
               <a>Learn More</a>
             </Link>
-            <img src="/assets/index_quality_pic1.jpg" alt="pic1" />
+            <Image src="/assets/index_quality_pic1.jpg" alt='pic1' width={595} height={260} layout='responsive'></Image>
           </div>
         </div>
         <div className={style.right}>
@@ -128,7 +128,7 @@ export default function Home() {
               <p>Project Finished</p>
             </li>
           </ul>
-          <img src="/assets/index_quality_pic2.jpg" alt="pic2" />
+          <Image src="/assets/index_quality_pic2.jpg" alt='pic1' width={595} height={510} layout='responsive'></Image>
         </div>
       </div>
       <div className={`${style.created} ${style.wrap}`}>
@@ -154,7 +154,7 @@ export default function Home() {
               <p>{data.content}</p>
               <div className={style.cbottom}>
                 <div className={style.left}>
-                  <img src={data.pic} alt="pic1" />
+                  <Image src={data.pic} alt='pic3' width={50} height={50} layout='fixed'></Image>
                   <h4>{data.name}</h4>
                 </div>
                 <div className={style.right}>
@@ -190,7 +190,9 @@ export default function Home() {
             {
               IndexData.articlesData.map((data, inx) => (
                 <li key={inx}>
-                  <img src={data.pic1} alt="pic1" />
+                  <div className={style.picWrap}>
+                    <Image src={data.pic1} alt='pic1' width={260} height={260} layout='responsive'></Image>
+                  </div>
                   <div className={style.content}>
                     <p>{data.sub1}</p>
                     <h3>{data.title}</h3>
