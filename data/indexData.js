@@ -125,11 +125,11 @@ const articlesData = [{
 },
 ];
 
-const data = {
+const Data = {
     productData,
     benefitsData,
     createdData,
     articlesData
 }
 
-export default data;
+export default Data;

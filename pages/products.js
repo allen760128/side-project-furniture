@@ -7,10 +7,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Carousell from '../components/carousell';
 import Page from '../components/page';
-import { item } from './data/productsData';
+import ProData from '../data/productsData';
 // import { Aa } from '../styles/aa.js';
 
-const products = () => {
+const Products = () => {
 
 
     return (
@@ -53,7 +53,7 @@ const products = () => {
                 <div className={style.list}>
                     <ul className={style.listUl}>
                         {
-                            item.map(data => (
+                            ProData.item.map(data => (
                                 <li key={data.id}>
                                     <Link href='/#'>
                                         <a>
@@ -78,4 +78,4 @@ const products = () => {
 }
 
 
-export default products;
+export default Products;

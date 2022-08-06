@@ -9,7 +9,7 @@ import { FreeMode, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import IndexData from './data/indexData';
+import IndexData from '../data/indexData';
 
 export default function Home() {
 
