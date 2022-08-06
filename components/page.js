@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import style from './page.module.css';
 import { v4 as uuidv4 } from 'uuid';
 
-const page = ({ page }) => {
+const Page = ({ page }) => {
     const [paGe, setPage] = useState(1);
     const pAray = () => {
         let arr = [];
@@ -67,4 +67,4 @@ const page = ({ page }) => {
     )
 }
 
-export default page;
+export default Page;

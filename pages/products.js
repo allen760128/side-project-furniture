@@ -1,6 +1,7 @@
 import React from 'react';
 import style from '../styles/products.module.css';
 import Head from '../components/head';
+import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -15,6 +16,7 @@ const products = () => {
     return (
         <div>
             <Head title={'Lalasia products'}></Head>
+            <Nav product={'#518581'} />
             <div className={`${style.banner} `}>
                 <div className={style.title}>
                     <h1>Products</h1>
@@ -69,6 +71,7 @@ const products = () => {
                     </ul>
                 </div>
             </div>
+            <Page page={10} />
             <Footer></Footer>
         </div>
     )

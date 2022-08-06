@@ -1,4 +1,5 @@
 import Head from '../components/head';
+import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Link from 'next/link';
 import style from '../styles/Home.module.css';
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <div className={style.container}>
       <Head title={'Lalasia side project'}></Head>
+      <Nav />
       <div className={`${style.banner} ${style.wrap}`}>
         <div className={style.title}>
           <h1>Discover Furniture With<br />

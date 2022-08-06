@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './nav.module.css';
 import Link from 'next/link';
 
-const nav = ({ product }) => {
+const Nav = ({ product }) => {
     const [rwd, setRwd] = useState(false);
 
     const handleRwdMenu = () => {
@@ -110,4 +110,4 @@ const nav = ({ product }) => {
     )
 }
 
-export default nav;
+export default Nav;
