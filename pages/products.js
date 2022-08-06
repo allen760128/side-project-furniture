@@ -7,17 +7,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Carousell from '../components/carousell';
 import Page from '../components/page';
-import { item } from './data/productsData';
+import ProData from '../data/productsData';
 // import { Aa } from '../styles/aa.js';
 
-const products = () => {
+const Products = () => {
 
 
     return (
         <div>
             <Head title={'Lalasia products'}></Head>
-            {Nav('#518581')}
-            {/* <Nav product={'#518581'} /> */}
+            <Nav product={'#518581'} ></Nav>
             <div className={`${style.banner} `}>
                 <div className={style.title}>
                     <h1>Products</h1>
@@ -54,7 +53,7 @@ const products = () => {
                 <div className={style.list}>
                     <ul className={style.listUl}>
                         {
-                            item.map(data => (
+                            ProData.item.map(data => (
                                 <li key={data.id}>
                                     <Link href='/#'>
                                         <a>
@@ -72,12 +71,11 @@ const products = () => {
                     </ul>
                 </div>
             </div>
-            {Page(10)}
-            {/* <Page page={10} /> */}
+            <Page page={10} ></Page>
             <Footer></Footer>
         </div>
     )
 }
 
 
-export default products;
+export default Products;

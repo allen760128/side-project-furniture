@@ -64,3 +64,9 @@ export const item = [
         price: '$32.43'
     },
 ];
+
+const ProData = {
+    item
+}
+
+export default ProData;

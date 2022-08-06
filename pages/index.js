@@ -9,7 +9,7 @@ import { FreeMode, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import IndexData from './data/indexData';
+import IndexData from '../data/indexData';
 
 export default function Home() {
 
@@ -17,8 +17,7 @@ export default function Home() {
   return (
     <div className={style.container}>
       <Head title={'Lalasia side project'}></Head>
-      {Nav()}
-      {/* <Nav /> */}
+      <Nav ></Nav>
       <div className={`${style.banner} ${style.wrap}`}>
         <div className={style.title}>
           <h1>Discover Furniture With<br />
