@@ -226,6 +226,11 @@
 
 
 @media (max-width: 768px) {
+    .wrap {
+        max-width: 1400px;
+        padding: 0 1.5rem;
+    }
+
     /* ---------------------banner------------------- */
 
     .banner .title {
