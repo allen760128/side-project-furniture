@@ -39,7 +39,7 @@ const Id = () => {
             </div>
             <div className={`${style.related} ${style.wrap}`}>
                 <div className={style.title}>
-                    <h3>Related Items a</h3>
+                    <h3>Related Items</h3>
                 </div>
                 <ul className={style.item}>
                     {
