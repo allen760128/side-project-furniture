@@ -5,7 +5,8 @@ import Link from 'next/link';
 const Nav = ({ product }) => {
     const [rwd, setRwd] = useState(false);
 
-    const handleRwdMenu = () => {
+    const handleRwdMenu = (e) => {
+        e.preventDefault();
         setRwd(true);
     }
 
@@ -39,17 +40,17 @@ const Nav = ({ product }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="">
+                                <Link href="/">
                                     <a>Services</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="">
+                                <Link href="/">
                                     <a>Article</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="">
+                                <Link href="/">
                                     <a>About Us</a>
                                 </Link>
                             </li>
@@ -57,17 +58,17 @@ const Nav = ({ product }) => {
                     </div>
 
                     <div className={style.user}>
-                        <Link href="">
+                        <Link href="/">
                             <a>
                                 <span style={{ backgroundImage: 'url(/assets/nav_icon1.svg)' }}></span>
                             </a>
                         </Link>
-                        <Link href="">
+                        <Link href="/">
                             <a>
                                 <span style={{ backgroundImage: 'url(/assets/nav_icon2.svg)' }}></span>
                             </a>
                         </Link>
-                        <Link href="">
+                        <Link href="/">
                             <a onClick={handleRwdMenu}>
                                 <span style={{ backgroundImage: 'url(/assets/nav_icon3.svg)' }}></span>
                             </a>
@@ -88,17 +89,17 @@ const Nav = ({ product }) => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="">
+                            <Link href="/">
                                 <a>Services</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="">
+                            <Link href="/">
                                 <a>Article</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="">
+                            <Link href="/">
                                 <a>About Us</a>
                             </Link>
                         </li>

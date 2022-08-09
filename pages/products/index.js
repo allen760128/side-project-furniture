@@ -1,17 +1,16 @@
 import React from 'react';
-import style from '../styles/products.module.css';
-import Head from '../components/head';
-import Nav from '../components/nav';
-import Footer from '../components/footer';
+import style from '../../styles/products.module.css';
+import Head from '../../components/head';
+import Nav from '../../components/nav';
+import Footer from '../../components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
-import Carousell from '../components/carousell';
-import Page from '../components/page';
-import ProData from '../data/productsData';
+import Carousell from '../../components/carousell';
+import Page from '../../components/page';
+import ProData from '../../data/productsData';
 // import { Aa } from '../styles/aa.js';
 
 const Products = () => {
-
 
     return (
         <div>
@@ -55,8 +54,11 @@ const Products = () => {
                         {
                             ProData.item.map(data => (
                                 <li key={data.id}>
-                                    <Link href='/#'>
-                                        <a>
+                                    <Link href={{
+                                        pathname: '/products/[id]',
+                                        query: { id: data.id }
+                                    }}>
+                                        <a >
                                             <Image src={data.pic} alt='banner' width={394} height={360} layout='responsive'></Image >
                                         </a>
                                     </Link>
