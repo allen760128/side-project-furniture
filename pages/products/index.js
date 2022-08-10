@@ -18,8 +18,8 @@ const Products = () => {
             <Nav product={'#518581'} ></Nav>
             <div className={`${style.banner} `}>
                 <div className={style.title}>
-                    <h1>Products</h1>
-                    <p>We display products based on the latest <br className={style.rwBr} />products we have, if you want<br />to see our old <br className={style.rwBr} />products please enter the name of the item</p>
+                    <h1>Services</h1>
+                    <p>The product crafted by talented crafter and using high<br /> quality material with love inside</p>
                 </div>
                 <Carousell />
             </div>
