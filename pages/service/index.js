@@ -26,7 +26,7 @@ const Service = () => {
             <div className={`${style.list} ${style.wrap}`}>
                 <ul className={style.listUl}>
                     {listData.map(data => (
-                        <li ley={data.id}>
+                        <li key={data.id}>
                             <h1>{data.num}</h1>
                             <h3>{data.title}</h3>
                             <p>{data.content}</p>
