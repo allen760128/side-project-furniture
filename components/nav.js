@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './nav.module.css';
 import Link from 'next/link';
 
-const Nav = ({ product }) => {
+const Nav = ({ product, service }) => {
     const [rwd, setRwd] = useState(false);
 
     const handleRwdMenu = (e) => {
@@ -40,8 +40,8 @@ const Nav = ({ product }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
-                                    <a>Services</a>
+                                <Link href="/service">
+                                    <a style={{ borderBottom: `3px solid ${service}` }}>Services</a>
                                 </Link>
                             </li>
                             <li>
@@ -89,7 +89,7 @@ const Nav = ({ product }) => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/service">
                                 <a>Services</a>
                             </Link>
                         </li>

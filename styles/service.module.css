@@ -1,0 +1,50 @@
+.wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ---------------------banner------------------- */
+
+.banner .title {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 90px 0;
+}
+
+.banner .title>h1 {
+    padding-bottom: 2rem;
+}
+
+.banner .pic {
+    display: block;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #F3F3F3;
+}
+
+
+/* ---------------------list------------------- */
+
+.list {
+    padding: 4rem;
+}
+
+.list .listUl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.list .listUl>li {
+    width: 32%;
+    padding-top: 5px;
+    padding-bottom: 2rem;
+}
+
+.list .listUl>li>h1 {
+    color: #518581;
+}
+
+.list .listUl>li>h3 {
+    padding: 26px 0 10px 0;
+}
