@@ -26,7 +26,8 @@
 /* ---------------------list------------------- */
 
 .list {
-    padding: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .list .listUl {
@@ -47,4 +48,102 @@
 
 .list .listUl>li>h3 {
     padding: 26px 0 10px 0;
+}
+
+
+/* ---------------------portfolio------------------- */
+
+.portfolio {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.portfolio .title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.portfolio .title>h5 {
+    width: 100%;
+    color: #FFB23F;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.portfolio .title .left {
+    width: 40%;
+}
+
+.portfolio .title .left>h2 {
+    padding-bottom: 20px;
+}
+
+.portfolio .title .right {
+    width: 40%;
+}
+
+.portfolio .title .right>p {
+    padding-bottom: 20px;
+}
+
+.portfolio .title .right>a {
+    display: block;
+    color: #518581;
+    font-weight: 500;
+}
+
+.portfolio .pic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio .pic .left {
+    display: block;
+    width: 41%;
+}
+
+.portfolio .pic .right {
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio .pic .right .top {
+    display: block;
+    width: 100%;
+}
+
+.portfolio .pic .right .bot {
+    display: block;
+    width: 100%;
+}
+
+
+/* ---------------------work------------------- */
+
+.work {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work>a {
+    margin-top: 2rem;
+    color: #ffffff;
+    background-color: #518581;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+}
+
+.work>a:hover {
+    background-color: #3c6966;
 }

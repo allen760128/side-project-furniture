@@ -35,6 +35,42 @@ const Service = () => {
 
                 </ul>
             </div>
+            <div className={`${style.portfolio} ${style.wrap}`}>
+                <div className={style.title}>
+                    <h5>Portofolio</h5>
+                    <div className={style.left}>
+
+                        <h2>Amazing project we’ve done before</h2>
+                    </div>
+                    <div className={style.right}>
+                        <p>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non.</p>
+                        <Link href='/'>
+                            <a>View Portfolio</a>
+                        </Link>
+                    </div>
+                </div>
+                <div className={style.pic}>
+                    <div className={style.left}>
+                        <Image src='/assets/service_pic1.jpg' alt='banner' width={505} height={632} layout='responsive'></Image>
+                    </div>
+                    <div className={style.right}>
+                        <div className={style.top}>
+                            <Image src='/assets/service_pic2.jpg' alt='banner' width={705} height={301} layout='responsive'></Image>
+                        </div>
+                        <div className={style.bot}>
+                            <Image src='/assets/service_pic3.jpg' alt='banner' width={705} height={301} layout='responsive'></Image>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={`${style.work} ${style.wrap}`}>
+                <h2>Are you interested <br />work with us?</h2>
+                <Link href=''>
+                    <a >
+                        Let's Talk<span style={{ backgroundImage: 'url(/assets/index_join_icon1.svg)' }}></span>
+                    </a>
+                </Link>
+            </div>
             <Footer></Footer>
         </div>
     )
