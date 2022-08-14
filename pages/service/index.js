@@ -65,9 +65,9 @@ const Service = () => {
             </div>
             <div className={`${style.work} ${style.wrap}`}>
                 <h2>Are you interested <br />work with us?</h2>
-                <Link href=''>
+                <Link href='/'>
                     <a >
-                        Let's Talk<span style={{ backgroundImage: 'url(/assets/index_join_icon1.svg)' }}></span>
+                        Let`s Talk<span style={{ backgroundImage: 'url(/assets/index_join_icon1.svg)' }}></span>
                     </a>
                 </Link>
             </div>
