@@ -7,8 +7,8 @@ import Image from 'next/image';
 import { listData } from '../../data/serviceData';
 import Link from 'next/link';
 
-const Service = () => {
 
+const Service = () => {
 
     return (
         <div>
@@ -52,13 +52,34 @@ const Service = () => {
                 <div className={style.pic}>
                     <div className={style.left}>
                         <Image src='/assets/service_pic1.jpg' alt='banner' width={505} height={632} layout='responsive'></Image>
+                        <div className={style.cont}>
+                            <h3>Siska Kohl’s Bedroom</h3>
+                            <p>We start renovating her...</p>
+                            <Link href='/'>
+                                <a>See Detail</a>
+                            </Link>
+                        </div>
                     </div>
                     <div className={style.right}>
                         <div className={style.top}>
                             <Image src='/assets/service_pic2.jpg' alt='banner' width={705} height={301} layout='responsive'></Image>
+                            <div className={style.cont}>
+                                <h3>Jeruk Veldevana Living Room Design</h3>
+                                <p>We start renovating her...</p>
+                                <Link href='/'>
+                                    <a>See Detail</a>
+                                </Link>
+                            </div>
                         </div>
                         <div className={style.bot}>
                             <Image src='/assets/service_pic3.jpg' alt='banner' width={705} height={301} layout='responsive'></Image>
+                            <div className={style.cont}>
+                                <h3>Cozy Co-working space</h3>
+                                <p>We start renovating her...</p>
+                                <Link href='/'>
+                                    <a>See Detail</a>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,3 +98,13 @@ const Service = () => {
 }
 
 export default Service;
+
+// export async function getStaticProps() {
+//     const res = await axios.get('https://fakestoreapi.com/products');
+//     const resData = await res.data;
+//     return {
+//         props: {
+//             resData
+//         }
+//     }
+// }
