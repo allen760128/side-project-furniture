@@ -101,7 +101,34 @@
 
 .portfolio .pic .left {
     display: block;
+    position: relative;
     width: 41%;
+}
+
+.portfolio .pic .left .cont,
+.portfolio .pic .right .top .cont,
+.portfolio .pic .right .bot .cont {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+}
+
+.portfolio .pic .left .cont>h3,
+.portfolio .pic .left .cont>p,
+.portfolio .pic .left .cont>a,
+.portfolio .pic .right .top .cont>h3,
+.portfolio .pic .right .top .cont>p,
+.portfolio .pic .right .top .cont>a,
+.portfolio .pic .right .bot .cont>h3,
+.portfolio .pic .right .bot .cont>p,
+.portfolio .pic .right .bot .cont>a {
+    color: #fff;
+}
+
+.portfolio .pic .left .cont>p,
+.portfolio .pic .right .top .cont>p,
+.portfolio .pic .right .bot .cont>p {
+    padding: 10px 0;
 }
 
 .portfolio .pic .right {
@@ -113,14 +140,15 @@
 
 .portfolio .pic .right .top {
     display: block;
+    position: relative;
     width: 100%;
 }
 
 .portfolio .pic .right .bot {
     display: block;
+    position: relative;
     width: 100%;
 }
-
 
 /* ---------------------work------------------- */
 
@@ -146,4 +174,152 @@
 
 .work>a:hover {
     background-color: #3c6966;
+}
+
+
+
+
+@media(max-width:992px) {
+
+    /* ---------------------banner------------------- */
+
+    .banner .title>p .rwBr {
+        display: none;
+    }
+
+    /* ---------------------list------------------- */
+
+    .list .listUl>li {
+        width: 49%;
+    }
+
+
+}
+
+
+
+
+@media(max-width:768px) {
+    .wrap {
+        max-width: 1400px;
+        padding: 0 1.5rem;
+    }
+
+    /* ---------------------banner------------------- */
+
+    .banner .title {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .banner .title>h1 {
+        padding-bottom: 1rem;
+    }
+
+    .banner .title>p>br {
+        display: none;
+    }
+
+    .banner .title .rwBr {
+        display: block;
+    }
+
+
+    /* ---------------------list------------------- */
+
+    .list {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .list .listUl {
+        gap: unset;
+    }
+
+    .list .listUl>li {
+        width: 100%;
+    }
+
+
+    /* ---------------------portfolio------------------- */
+
+    .portfolio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio .title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portfolio .title>h5 {
+        padding-bottom: 0.5rem;
+    }
+
+    .portfolio .title .left {
+        width: 100%;
+    }
+
+    .portfolio .title .left>h2 {
+        padding-bottom: 0.5rem;
+    }
+
+    .portfolio .title .right {
+        width: 100%;
+    }
+
+    .portfolio .title .right>p {
+        padding-bottom: 20px;
+    }
+
+    .portfolio .title .right>a {
+        font-size: 12px;
+    }
+
+    .portfolio .pic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .portfolio .pic .left {
+        width: 100%;
+    }
+
+    .portfolio .pic .left .cont,
+    .portfolio .pic .right .top .cont,
+    .portfolio .pic .right .bot .cont {
+        bottom: 0.5rem;
+        left: 0.5rem;
+    }
+
+    .portfolio .pic .left .cont>p,
+    .portfolio .pic .right .top .cont>p,
+    .portfolio .pic .right .bot .cont>p {
+        padding: 5px 0;
+    }
+
+    .portfolio .pic .right {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    /* ---------------------work------------------- */
+
+    .work {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .work>a {
+        font-size: 14px;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+
 }
