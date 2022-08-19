@@ -6,10 +6,11 @@ import Footer from '../../components/footer';
 import Image from 'next/image';
 import { listData } from '../../data/serviceData';
 import Link from 'next/link';
+import axios from 'axios';
 
 
-const Service = () => {
-
+const Service = ({ resData }) => {
+    console.log(resData);
     return (
         <div>
             <Head title={'Lalasia service'}></Head>
@@ -100,7 +101,7 @@ const Service = () => {
 export default Service;
 
 // export async function getStaticProps() {
-//     const res = await axios.get('https://fakestoreapi.com/products');
+//     const res = await axios.get('/pages/api');
 //     const resData = await res.data;
 //     return {
 //         props: {
