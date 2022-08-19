@@ -20,7 +20,7 @@ export default function Home() {
       <Nav ></Nav>
       <div className={`${style.banner} ${style.wrap}`}>
         <div className={style.title}>
-          <h1>Discover Furniture With<br />
+          <h1>aaaaaaaaDiscover Furniture With<br />
             High Quality Wood</h1>
           <div className={style.divp}>
             <p>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi,<br />
