@@ -1,0 +1,175 @@
+.wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ---------------------banner------------------- */
+
+
+.banner .title {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 90px 0;
+
+}
+
+.banner .title>h1 {
+    padding-bottom: 2rem;
+}
+
+.banner .video {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.banner .video>iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* ---------------------quality------------------- */
+
+.mission {
+    padding-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%
+}
+
+.mission>h5 {
+    width: 100%;
+    color: #FFB23F;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.mission .left {
+    width: 49%;
+}
+
+.mission .left .title {
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.mission .left>ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.mission .right {
+    width: 49%;
+}
+
+.mission .right>ul>li {
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.mission .right>ul>li .left {
+    width: 80px;
+}
+
+.mission .right>ul>li .left .round {
+    background-color: #F9F9F9;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission .right>ul>li .left .round>span {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.mission .right>ul>li .right {
+    width: 100%;
+}
+
+.mission .right>ul>li .right>p {
+    padding-top: 0.8rem;
+}
+
+/* ---------------------team------------------- */
+
+.team {
+    padding-top: 8rem;
+}
+
+.team .btop {
+    width: 100%;
+    color: #FFB23F;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.team .bmiddle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.team .teamWrap {
+    width: 100%;
+}
+
+.team .teamWrap>ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%
+}
+
+.team .teamWrap>ul>li {
+    width: 32%;
+    padding-bottom: 2rem;
+}
+
+.team .teamWrap>ul>li .pic {
+    display: block;
+}
+
+.team .teamWrap>ul>li>h3 {
+    padding-top: 1rem;
+}
+
+.team .teamWrap>ul>li>p {
+    padding-top: 0.5rem;
+}
+
+/* ---------------------work------------------- */
+
+.work {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work>a {
+    margin-top: 2rem;
+    color: #ffffff;
+    background-color: #518581;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+}
+
+.work>a:hover {
+    background-color: #3c6966;
+}

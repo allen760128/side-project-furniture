@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './nav.module.css';
 import Link from 'next/link';
 
-const Nav = ({ product, service, article }) => {
+const Nav = ({ product, service, article, aboutus }) => {
     const [rwd, setRwd] = useState(false);
 
     const handleRwdMenu = (e) => {
@@ -50,15 +50,15 @@ const Nav = ({ product, service, article }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/">
-                                    <a>About Us</a>
+                                <Link href="/aboutus">
+                                    <a style={{ borderBottom: `3px solid ${aboutus}` }}>About Us</a>
                                 </Link>
                             </li>
                         </ul>
                     </div>
 
                     <div className={style.user}>
-                        <Link href="/">
+                        <Link href="/cms/login">
                             <a>
                                 <span style={{ backgroundImage: 'url(/assets/nav_icon1.svg)' }}></span>
                             </a>
