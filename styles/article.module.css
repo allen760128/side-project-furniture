@@ -1,0 +1,304 @@
+.wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ---------------------banner------------------- */
+
+.banner {
+    padding-bottom: 10rem;
+}
+
+.banner .title {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 90px 0;
+
+}
+
+.banner .title>h1 {
+    padding-bottom: 2rem;
+}
+
+.banner .pic {
+    display: block;
+
+    position: relative;
+}
+
+.banner .pic .tip {
+    position: absolute;
+    width: 80%;
+    height: 180px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: -90px;
+    margin: auto;
+    padding: 2rem 3rem 0 3rem;
+    box-shadow: 0px 4px 140px rgba(175, 173, 181, 0.2);
+}
+
+.banner .pic .tip>h3 {
+    padding: 1rem 0;
+}
+
+.banner .pic .tip .data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.banner .pic .tip .data>span {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+}
+
+.banner .pic .tip .data>p {
+    padding-left: 1rem;
+    font-size: 14px;
+}
+
+
+/* ---------------------portfolio------------------- */
+
+.news {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.news .title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.news .title>h5 {
+    width: 100%;
+    color: #FFB23F;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.news .title>h2 {
+    padding-bottom: 20px;
+}
+
+.news .picWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.news .picWrap .left,
+.news .picWrap .right {
+    width: 49%;
+}
+
+.news .picWrap .left .pic,
+.news .picWrap .right .pic {
+    padding-bottom: 2rem;
+}
+
+.news .picWrap h3 {
+    padding: 1rem 0;
+}
+
+.news .picWrap .data {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.news .picWrap .data>span {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+}
+
+.news .picWrap .data>p {
+    font-size: 14px;
+}
+
+/* ---------------------work------------------- */
+
+.work {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work>a {
+    margin-top: 2rem;
+    color: #ffffff;
+    background-color: #518581;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+}
+
+.work>a:hover {
+    background-color: #3c6966;
+}
+
+
+
+
+@media(max-width:992px) {
+
+    /* ---------------------banner------------------- */
+
+    .banner .title>p .rwBr {
+        display: none;
+    }
+
+    /* ---------------------list------------------- */
+
+    .list .listUl>li {
+        width: 49%;
+    }
+
+
+}
+
+
+
+
+@media(max-width:768px) {
+    .wrap {
+        max-width: 1400px;
+        padding: 0 1.5rem;
+    }
+
+    /* ---------------------banner------------------- */
+
+    .banner .title {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .banner .title>h1 {
+        padding-bottom: 1rem;
+    }
+
+    .banner .title>p>br {
+        display: none;
+    }
+
+    .banner .title .rwBr {
+        display: block;
+    }
+
+
+    /* ---------------------list------------------- */
+
+    .list {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .list .listUl {
+        gap: unset;
+    }
+
+    .list .listUl>li {
+        width: 100%;
+    }
+
+
+    /* ---------------------portfolio------------------- */
+
+    .portfolio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio .title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portfolio .title>h5 {
+        padding-bottom: 0.5rem;
+    }
+
+    .portfolio .title .left {
+        width: 100%;
+    }
+
+    .portfolio .title .left>h2 {
+        padding-bottom: 0.5rem;
+    }
+
+    .portfolio .title .right {
+        width: 100%;
+    }
+
+    .portfolio .title .right>p {
+        padding-bottom: 20px;
+    }
+
+    .portfolio .title .right>a {
+        font-size: 12px;
+    }
+
+    .portfolio .pic {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .portfolio .pic .left {
+        width: 100%;
+    }
+
+    .portfolio .pic .left .cont,
+    .portfolio .pic .right .top .cont,
+    .portfolio .pic .right .bot .cont {
+        bottom: 0.5rem;
+        left: 0.5rem;
+    }
+
+    .portfolio .pic .left .cont>p,
+    .portfolio .pic .right .top .cont>p,
+    .portfolio .pic .right .bot .cont>p {
+        padding: 5px 0;
+    }
+
+    .portfolio .pic .right {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    /* ---------------------work------------------- */
+
+    .work {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .work>a {
+        font-size: 14px;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+
+}

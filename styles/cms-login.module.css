@@ -1,0 +1,207 @@
+.loginWrap {
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    min-height: 800px;
+}
+
+.loginWrap .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginWrap .left>span {
+    display: block;
+    width: 705px;
+    height: 540px;
+}
+
+.loginWrap .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.loginWrap .right .rightWrap {
+    background-color: #fff;
+    width: 80%;
+    height: 90%;
+    min-height: 750px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-left: 5rem;
+    padding: 3.5rem 3rem;
+}
+
+.loginWrap .right .rightWrap>h3 {
+    padding-bottom: 0.5rem;
+}
+
+.loginWrap .right .rightWrap>h2 {
+    padding-bottom: 1.5rem;
+    color: #518581;
+}
+
+.loginWrap .right .rightWrap .login1 {
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.loginWrap .right .rightWrap .login1>span {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 35px;
+    width: 50px;
+    height: 100%;
+}
+
+.loginWrap .right .rightWrap .lineWrap {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.loginWrap .right .rightWrap .lineWrap>span {
+    height: 1px;
+    background-color: #BFBFBF;
+    width: 100%;
+    display: block;
+}
+
+.loginWrap .right .rightWrap .lineWrap>p {
+    color: #2F2F2F;
+    font-size: 16px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginWrap .right .rightWrap .inp {
+    width: 100%;
+    height: 70px;
+    background-color: #ECECEC;
+    border-radius: 8px;
+    display: flex;
+}
+
+.loginWrap .right .rightWrap .inp>span {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    width: 80px;
+    height: 100%;
+}
+
+.loginWrap .right .rightWrap .err {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    padding-left: 70px;
+    height: 20px;
+    line-height: 20px;
+    color: #ff3737;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.loginWrap .right .rightWrap .inp .inputWrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loginWrap .right .rightWrap .inp .inputWrap>label {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    color: #2F2F2F;
+}
+
+.loginWrap .right .rightWrap .inp .inputWrap>input {
+    height: 30px;
+    width: 100%;
+    border: none;
+    background-color: unset;
+    appearance: unset;
+    outline: unset;
+    color: #2F2F2F;
+    font-size: 16px;
+}
+
+.loginWrap .right .rightWrap .check {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.loginWrap .right .rightWrap .check .left {
+    width: auto;
+}
+
+.loginWrap .right .rightWrap .check .left>input {
+    width: 20px;
+    height: 20px;
+}
+
+.loginWrap .right .rightWrap .check .left>p {
+    padding: 0 0 0 0.5rem;
+    color: #2F2F2F;
+    font-size: 16px;
+}
+
+.loginWrap .right .rightWrap .check .right {
+    width: auto;
+    color: #6358DC;
+}
+
+.loginWrap .right .rightWrap .log {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #6358DC;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.loginWrap .right .rightWrap .register {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginWrap .right .rightWrap .register>p {
+    font-size: 14px;
+}
+
+.loginWrap .right .rightWrap .register>a {
+    font-size: 14px;
+    color: #6358DC;
+    font-weight: 500;
+    padding-left: 0.3rem;
+}
